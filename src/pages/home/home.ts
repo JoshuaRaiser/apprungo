@@ -32,10 +32,10 @@ export class HomePage {
 
   openWebPageUrl(url: string)
   {
-    const options: InAppBrowserOptions = { zoom: 'no'}
+    const options: InAppBrowserOptions = { zoom: 'no', location: 'no'}
 
     // abre uma URL e retorna um InAppBrowserObject
-    const browser = this.inAppBrowser.create(url, 'blank', options);
+    const browser = this.inAppBrowser.create(url, '_self', options);
   }
 
 }
